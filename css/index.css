@@ -1,0 +1,77 @@
+/*
+* @Author: admin
+* @Date:   2018-04-04 17:00:53
+* @Last Modified by:   admin
+* @Last Modified time: 2018-04-04 17:01:04
+*/
+.common_box{
+    width: 100%;
+}
+header{
+    height: 81px;
+    background: #0f99ff;
+}
+.header_l{
+    float: left;
+    width: 18%;
+    margin-left: 2%;
+    margin-top: 18px;
+}
+.header_m{
+    float: right;
+    text-align: right;
+    /*width: 55%;*/
+}
+.header_m ul li{
+    float: right;
+    height: 60px;
+    width: 72px;
+    text-align: center;
+    margin-right: 4px;
+}
+.bg_yes{
+    background: #fff;
+}
+.bg_no{
+    background: #2aaaff;
+}
+.header_m ul{
+    padding-top: 21px;
+}
+.header_m ul li a{
+    display: inline-block;
+}
+.header_m ul li a img{
+    margin-top: 8px;
+}
+.font_color1{
+    color: #ff8f00;
+}
+.font_color2{
+    color: #fff;
+}
+.header_r{
+    height: 50px;
+    margin-top: 30px;
+    float: right;
+    color:#fff;
+    padding:0 1%;
+}
+.header_r ul li{
+    float: left;
+    color:#fff;
+    padding:0 8px;
+}
+.header_r ul li.select{
+    margin-right: 5px;
+}
+.header_r ul li.setting{
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    padding:0 13px;
+    cursor: pointer;
+}
+.header_r ul li.logout{
+    margin-left: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/common.css">
+	    <link rel="stylesheet" href="../css/index.css">
+	    <style>
+	    .container_box{
+	    	min-height:800px;
+	    }
+	    #container{
+	    	min-height:800px;
+	    	width: 100%;
+	    	height: 100%;
+	    }
+		#zhezhao{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 0;
+			z-index: 1000;
+			background-color: rgba(0,0,0,.3);
+		}
+	    </style>
+	    <script src="../js/jquery-3.0.0.min.js"></script>
+    </head>
+    <body>
+    	<div class="common_box">
+		    <header class="clearfix">
+		        <div class="header_l">
+		            <img src="../images/storage_logo.png" alt="">
+		        </div>
+		        <div class="header_r clearfix">
+		            <ul>
+		                <li class="admin"><img src="../images/storage_tab6.png" class="img_icon1"></li>
+		                <li class="massage">万达信息李信</li>
+		                <li class="select"><img src="../images/arrows.png"></li>
+		                <li class="setting"><img src="../images/storage_tab7.png"></li>
+		                <li class="logout"><img src="../images/storage_tab8.png" alt="" class="shut_img"></li>
+		            </ul>
+		        </div>
+
+		        <div class="header_m clearfix">
+		            <ul class="clearfix">
+		                <li class="bg_no">
+		                    <a href="./shuju/jichushuju.html" target="container">
+		                        <img class="header_image" src="../images/sj_icon.png" >
+		                        <p class="font_color2">基础数据</p>
+		                    </a>
+		                </li>
+		                <li class="bg_no">
+		                    <a href="./taizhang/kucuntaizhang.html" target="container">
+		                        <img class="header_image"  src="../images/kc_icon.png" >
+		                        <p class="font_color2">库存台账</p>
+		                    </a>
+		                </li>
+		                <li class="bg_no">
+		                    <a href="./jiesuan/jiesuanliebiao.html" target="container">
+		                        <img class="header_image"  src="../images/js_icon.png" >
+		                        <p class="font_color2">结 算</p>
+		                    </a>
+		                </li>
+		                <li class="bg_no">
+		                    <a href="./guanli/zuoyeliebiao.html" target="container">
+		                        <img class="header_image"  src="../images/gl_icon.png" >
+		                        <p class="font_color2">作业管理</p>
+		                    </a>
+		                </li>
+		                <li class="bg_no">
+		                    <a href="./chenzhong/jianjinchengzhong.html" target="container">
+		                        <img class="header_image"  src="../images/cz_icon.png">
+		                        <p class="font_color2">检斤称重</p>
+		                    </a>
+		                </li>
+		                <li class="bg_no">
+		                    <a href="./churuku/churuku.html" target="container">
+		                        <img class="header_image"  src="../images/tab_icon.png" alt="">
+		                        <p class="font_color2">出入库</p>
+		                    </a>
+		                    
+		                </li>
+
+		            </ul>
+		        </div>
+		    </header>
+		</div>
+		<div class="container_box">
+			<iframe id="container" src="./churuku/churuku.html"  frameborder="0" name="container" width="100%" height="100%"   scrolling="no" frameborder="0"  allowtransparency="true"></iframe>
+		</div>
+
+	<div id="zhezhao"></div>
+    </body>
+	<scrip>
+		function alertBox(){
+			$('#zhezhao').css({
+				'width' : '100%',
+				'height': '100%'
+			})
+		}
+		function closeBox(){
+			$('#zhezhao').css({
+				'width' : '0',
+				'height': '0'
+			})
+		}
+	</scrip>
+</html>
